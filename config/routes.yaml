@@ -1,0 +1,100 @@
+
+#Посты
+GetPosts:
+  path:       /getPosts
+  controller: App\Controller\PostsController::GetPosts
+  methods:    GET
+
+GetPost:
+  path:       /getPost/{id}
+  controller: App\Controller\PostsController::GetPost
+  methods:    GET
+  defaults:
+    id: 4f6cf35x-2c4y-483z-a0a9-158621f77a21
+
+PostPost:
+  path:       /postPost
+  controller: App\Controller\PostsController::PostPost
+  methods:    POST
+
+PutPost:
+  path:       /putPost/{id}
+  controller: App\Controller\PostsController::PutPost
+  methods:    PUT
+  defaults:
+    id: 126cf35x-2c4y-483z-a0a9-158621f77a21
+
+DeletePost:
+  path:       /deletePost/{id}
+  controller: App\Controller\PostsController::deletePost
+  methods:    DELETE
+  defaults:
+    id: 126cf35x-2c4y-483z-a0a9-158621f77a21
+
+# Комментарии
+GetCommentsByPostId:
+  path:       /getCommentsByPostId/{postID}
+  controller: App\Controller\CommentsController::GetComments
+  methods:    GET
+  defaults:
+    postID: 126cf35x-2c4y-483z-a0a9-158621f77a21
+
+PostComment:
+  path:       /postComment/{postID}
+  controller: App\Controller\CommentsController::CreateComment
+  methods:    POST
+  defaults:
+    postID: 546cf35x-2c4y-483z-a0a9-158621f77a21
+
+GetComment:
+  path:       /getComment/{id}
+  controller: App\Controller\CommentsController::GetComment
+  methods:    GET
+  defaults:
+    id: 126cf35x-2c4y-483z-a0a9-158621f77a21
+
+PutComment:
+  path:       /putComment/{id}
+  controller: App\Controller\CommentsController::PutComment
+  methods:    PUT
+  defaults:
+    id: 546cf35x-2c4y-483z-a0a9-158621f77a21
+
+DeleteComment:
+  path:       /deleteComment/{id}
+  controller: App\Controller\CommentsController::deleteComment
+  methods:    DELETE
+  defaults:
+    id: 546cf35x-2c4y-483z-a0a9-158621f77a21
+
+# Пользователи
+GetUsers:
+  path:       /getUsers
+  controller: App\Controller\UsersController::GetUsers
+  methods:    GET
+
+GetUser:
+  path:       /getUserById/{id}
+  controller: App\Controller\UsersController::GetUserById
+  methods:    GET
+  defaults:
+    id: 111cf35x-2c4y-483z-a0a9-158621f77a21
+
+PostUser:
+  path:       /postUser
+  controller: App\Controller\UsersController::PostUser
+  methods:    POST
+
+PutUser:
+  path:       /putUser/{id}
+  controller: App\Controller\UsersController::PutUser
+  methods:    PUT
+  defaults:
+    id: 111cf35x-2c4y-483z-a0a9-158621f77a21
+
+DeleteUser:
+  path:       /deleteUser/{id}
+  controller: App\Controller\UsersController::DeleteUser
+  methods:    DELETE
+  defaults:
+    id: 111cf35x-2c4y-483z-a0a9-158621f77a21
